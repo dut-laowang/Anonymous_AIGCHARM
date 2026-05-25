@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AIGenHarm-Video</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">AIGenHarm-Video</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="annotation.html">Annotation</a>
+        <a href="cases.html">Case Studies</a>
+        <a href="README.md">README</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Anonymous resources for AI-generated harmful-video moderation</p>
+        <h1>A benchmark for understanding harmful AI-generated videos on public platforms.</h1>
+        <p class="lead">
+          AIGenHarm-Video studies downstream moderation of AI-generated harmful videos collected
+          from TikTok and Bilibili, with platform-guideline-grounded annotations and diagnostic
+          experiments across model families.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="annotation.html">Open Annotation Console</a>
+          <a class="button secondary" href="cases.html">View Case Studies</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="metric-grid">
+          <div class="metric"><span>1,808</span><label>Videos</label></div>
+          <div class="metric"><span>993</span><label>Harmful</label></div>
+          <div class="metric"><span>815</span><label>Safe</label></div>
+          <div class="metric"><span>6</span><label>Harm Categories</label></div>
+        </div>
+        <div class="mini-chart" aria-label="Dataset label distribution">
+          <div class="bar-row"><span>Harmful</span><div><i style="width:54.9%"></i></div><b>54.9%</b></div>
+          <div class="bar-row safe"><span>Safe</span><div><i style="width:45.1%"></i></div><b>45.1%</b></div>
+          <div class="bar-row implicit"><span>Implicit harmful</span><div><i style="width:32.3%"></i></div><b>32.3%</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section two-col">
+      <div>
+        <p class="eyebrow">Motivation</p>
+        <h2>From generation safety to downstream platform governance</h2>
+        <p>
+          Existing video-safety benchmarks often focus on upstream generation behavior or traditional
+          real-video moderation. AIGenHarm-Video targets a different setting: AI-generated harmful
+          videos that have already entered public short-video platforms and require downstream review.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Benchmark Tasks</h3>
+        <ul class="clean-list">
+          <li><strong>Task A:</strong> binary harmful-content triage.</li>
+          <li><strong>Task B:</strong> multi-label harm-category diagnosis for harmful videos.</li>
+          <li><strong>Diagnostics:</strong> AI-vs-Real transfer and representation analysis.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">Taxonomy</p>
+        <h2>Six platform-guideline-grounded harm categories</h2>
+      </div>
+      <div class="taxonomy-grid">
+        <article><span>C1</span><h3>Hate, Harassment, Threats</h3><p>Attacks, humiliation, threats, or discrimination against persons or groups.</p></article>
+        <article><span>C2</span><h3>Violence, Dangerous Acts</h3><p>Violence, dangerous challenges, weapon use, or high-risk behavior.</p></article>
+        <article><span>C3</span><h3>Sexual Content, Nudity</h3><p>Explicit sexual acts, nudity, or strong sexual intent outside neutral contexts.</p></article>
+        <article><span>C4</span><h3>Child Safety</h3><p>Abuse, exploitation, grooming, sexualization, or other risks involving minors.</p></article>
+        <article><span>C5</span><h3>Illegal Activities, Regulated Goods</h3><p>Drug crimes, fraud, theft, weapons, cybercrime, or regulated transactions.</p></article>
+        <article><span>C6</span><h3>Misinformation, Political Sensitivity</h3><p>Harmful misleading claims, pseudo-factual narration, or compliance-sensitive content.</p></article>
+      </div>
+      <figure class="wide-figure">
+        <img src="assets/images/taxonomy_overview_6panel.png" alt="Representative examples of six harm categories">
+        <figcaption>Representative frames used in the paper to illustrate the six-category taxonomy.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section stats-section">
+      <div class="section-head">
+        <p class="eyebrow">Dataset Statistics</p>
+        <h2>Balanced platforms, imbalanced harm semantics</h2>
+      </div>
+      <div class="stats-layout">
+        <div class="chart-card">
+          <h3>Platform Split</h3>
+          <div class="stacked">
+            <span style="width:53.8%">TikTok 973</span>
+            <span style="width:46.2%">Bilibili 835</span>
+          </div>
+          <p>Near-balanced coverage across two public platforms.</p>
+        </div>
+        <div class="chart-card">
+          <h3>Category Counts</h3>
+          <div class="spark-bars" data-values="178,618,354,102,423,182" data-labels="C1,C2,C3,C4,C5,C6"></div>
+          <p>Multi-label categories are naturally imbalanced, with violence and illegal or regulated-goods content appearing frequently.</p>
+        </div>
+        <div class="chart-card">
+          <h3>Expression Type</h3>
+          <div class="donut" style="--value:67.7"><span>67.7%<small>explicit</small></span></div>
+          <p>321 harmful videos are implicit, requiring contextual or cross-frame interpretation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="eyebrow">Diagnostics</p>
+        <h2>AI-vs-Real transfer analysis</h2>
+      </div>
+      <div class="image-grid">
+        <figure><img src="assets/images/fig_5_1_probe_gap_final.png" alt="Harmful F1 gap"><figcaption>Category-balanced harmful F1.</figcaption></figure>
+        <figure><img src="assets/images/fig_5_2_error_profile_final.png" alt="Error profile"><figcaption>Error profiles under category-balanced control.</figcaption></figure>
+        <figure><img src="assets/images/fig_5_3_clip_qwen_geometry_stacked.png" alt="Representation geometry"><figcaption>Representation geometry and t-SNE diagnostics.</figcaption></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Anonymous project page for ACL/EMNLP-style review. Raw videos require controlled access.</p>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

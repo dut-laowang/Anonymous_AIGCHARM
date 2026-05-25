@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+data/
+videos/
+raw/
+outputs/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.pt
+*.pth
+*.npz
+
