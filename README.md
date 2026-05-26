@@ -8,10 +8,14 @@
 
 ![AIGenHarm-Video taxonomy overview](assets/images/taxonomy_overview_6panel.png)
 
-## Data
+## Access
 
 Project website:
 
 <https://dut-laowang.github.io/Anonymous_AIGCHARM/>
 
 Access to the full dataset will be provided through a [controlled request form](https://docs.google.com/forms/d/e/1FAIpQLScc8tHmE8salveyJbtOGMa3UgKLgyTRngQXHlVeg0tcB50Z7A/viewform?usp=dialog). An anonymized label sheet is available on the project website.
+
+Anonymized XLSX:
+
+<https://dut-laowang.github.io/Anonymous_AIGCHARM/assets/data/aigcharm_annotations_anonymized.xlsx>
