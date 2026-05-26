@@ -10,6 +10,10 @@
 
 ## Access
 
+Anonymous project website:
+
+<https://review-preview.github.io/Anonymous_AIGCHARM/>
+
 For double-blind review, this anonymous resource package does not link to
 author-associated hosting or external access-request forms. Access to the full
 dataset will be provided through a controlled request process after the
