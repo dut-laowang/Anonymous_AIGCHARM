@@ -10,6 +10,10 @@
 
 ## Access
 
+Anonymous project website:
+
+<https://anonymous.4open.science/w/Anonymous_AIGCHARM-81AD/site/index.html>
+
 For double-blind review, this anonymous resource package does not link to
 author-associated hosting or external access-request forms. Access to the full
 dataset will be provided through a controlled request process after the
