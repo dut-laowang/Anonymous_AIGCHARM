@@ -10,16 +10,11 @@
 
 ## Access
 
-Project website:
+For double-blind review, this anonymous resource package does not link to
+author-associated hosting or external access-request forms. Access to the full
+dataset will be provided through a controlled request process after the
+anonymous review period.
 
-<https://dut-laowang.github.io/Anonymous_AIGCHARM/>
+An anonymized label sheet is included in this package:
 
-Data page:
-
-<https://dut-laowang.github.io/Anonymous_AIGCHARM/site/data.html>
-
-Access to the full dataset will be provided through a [controlled request form](https://docs.google.com/forms/d/e/1FAIpQLScc8tHmE8salveyJbtOGMa3UgKLgyTRngQXHlVeg0tcB50Z7A/viewform?usp=dialog). An anonymized label sheet is available on the project website.
-
-Anonymized XLSX:
-
-<https://dut-laowang.github.io/Anonymous_AIGCHARM/assets/data/aigcharm_annotations_anonymized.xlsx>
+[`assets/data/aigcharm_annotations_anonymized.xlsx`](assets/data/aigcharm_annotations_anonymized.xlsx)
