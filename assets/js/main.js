@@ -16,3 +16,11 @@ sparkBars.forEach((node) => {
   });
 });
 
+document.querySelectorAll(".nav-links a, .brand").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const href = link.getAttribute("href");
+    if (!href || href.startsWith("http") || href.startsWith("#")) return;
+    event.preventDefault();
+    window.location.replace(href);
+  });
+});

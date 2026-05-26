@@ -14,7 +14,7 @@
         <a href="index.html">Home</a>
         <a href="annotation.html" class="active">Annotation</a>
         <a href="cases.html">Case Studies</a>
-        <a href="README.md">README</a>
+        <a href="manual.html">Manual</a>
       </div>
     </nav>
   </header>
@@ -26,21 +26,18 @@
       <p class="lead">This page summarizes the annotation protocol, category schema, provenance screening, and the controlled-access route for dataset materials.</p>
     </section>
 
-    <section class="section two-col">
-      <div class="card strong">
-        <h2>Request Dataset Access</h2>
-        <p>Raw videos are handled under controlled access. Reviewers and researchers should request access through the form below.</p>
-        <a class="button primary disabled" href="#" aria-disabled="true">Google Form link to be added</a>
-        <p class="note">The final form will ask for intended use, safety agreement, and redistribution restrictions.</p>
+    <section class="section access-grid">
+      <div class="download-card controlled">
+        <p class="eyebrow">Controlled Access</p>
+        <h2>Download Dataset</h2>
+        <p>Raw videos and review materials are available only through controlled access.</p>
+        <a class="button primary disabled" href="#" aria-disabled="true">Request Dataset Access</a>
       </div>
-      <div class="card">
-        <h2>Release Components</h2>
-        <ul class="clean-list">
-          <li>Annotation schema and category definitions.</li>
-          <li>Metadata and derived features where permitted.</li>
-          <li>Controlled raw-video access after approval.</li>
-          <li>Evaluation scripts for Task A, Task B, and diagnostics.</li>
-        </ul>
+      <div class="download-card">
+        <p class="eyebrow">Public File</p>
+        <h2>Download XLSX</h2>
+        <p>Download the anonymized annotation spreadsheet with platform labels, harm categories, and final decisions.</p>
+        <a class="button secondary" href="assets/data/aigcharm_annotations_anonymized.xlsx" download>Download XLSX</a>
       </div>
     </section>
 
@@ -86,9 +83,8 @@
   </main>
 
   <footer class="footer">
-    <p>Dataset access request form placeholder: [Google Form link to be added].</p>
+    <p>Anonymous project page for ACL/EMNLP-style review.</p>
   </footer>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-

@@ -4,6 +4,8 @@ __pycache__/
 .env
 .env.*
 data/
+!assets/data/
+!assets/data/aigcharm_annotations_anonymized.xlsx
 videos/
 raw/
 outputs/
@@ -14,4 +16,3 @@ outputs/
 *.pt
 *.pth
 *.npz
-
