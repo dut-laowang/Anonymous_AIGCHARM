@@ -2,86 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Data Access | AIGenHarm-Video</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta http-equiv="refresh" content="0; url=data.html">
+  <title>Data | AIGenHarm-Video</title>
+  <script>window.location.replace("data.html");</script>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a class="brand" href="index.html">AIGenHarm-Video</a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="annotation.html" class="active">Data Access</a>
-        <a href="cases.html">Case Studies</a>
-        <a href="manual.html">Manual</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="page-hero compact">
-      <p class="eyebrow">Data Access</p>
-      <h1>Project resources and controlled dataset access</h1>
-      <p class="lead">The project website is publicly available. Access to the full dataset will be provided through a controlled request form.</p>
-    </section>
-
-    <section class="section access-grid">
-      <div class="download-card controlled">
-        <p class="eyebrow">Controlled Access</p>
-        <h2>Download Dataset</h2>
-        <p>Raw videos and review materials are available only through controlled access.</p>
-        <a class="button primary disabled" href="#" aria-disabled="true">Request Dataset Access</a>
-      </div>
-      <div class="download-card">
-        <p class="eyebrow">Public File</p>
-        <h2>Download XLSX</h2>
-        <p>Download the anonymized annotation spreadsheet with platform labels, harm categories, and final decisions.</p>
-        <a class="button secondary" href="assets/data/aigcharm_annotations_anonymized.xlsx" download>Download XLSX</a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">Protocol</p>
-        <h2>2+1+2 human calibration pipeline</h2>
-      </div>
-      <div class="timeline">
-        <article><span>01</span><h3>Candidate Retrieval</h3><p>Keyword-based retrieval combines AI-generation cues with harm-category terms from platform guidelines.</p></article>
-        <article><span>02</span><h3>Provenance Screening</h3><p>Candidates are retained only when AI-generation provenance cues are documented through watermark, text/platform evidence, or visual synthetic evidence.</p></article>
-        <article><span>03</span><h3>VLM Pre-annotation</h3><p>A 200-video calibration set selects a cold-start VLM pre-annotator for assisting human review.</p></article>
-        <article><span>04</span><h3>Human Review</h3><p>Two annotators independently label videos; one senior reviewer adjudicates disagreements; two domain experts maintain the guideline and audit quality.</p></article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">Console Preview</p>
-        <h2>Final-review interface</h2>
-      </div>
-      <figure class="wide-figure console-shot">
-        <img src="assets/images/web_annotation_interface_final.jpg" alt="Annotation interface screenshot">
-        <figcaption>Example of the web annotation and final-review interface used in the paper. Preliminary model evidence is auxiliary; final labels are determined by human review.</figcaption>
-      </figure>
-    </section>
-
-    <section class="section">
-      <div class="section-head">
-        <p class="eyebrow">Label Schema</p>
-        <h2>Fields used for benchmark annotation</h2>
-      </div>
-      <div class="schema-table">
-        <div><b>video_id</b><span>Anonymous sample identifier.</span></div>
-        <div><b>platform</b><span>TikTok or Bilibili.</span></div>
-        <div><b>provenance_cue</b><span>Watermark, textual/platform cue, or visual synthetic evidence.</span></div>
-        <div><b>harmfulness</b><span>Harmful or safe.</span></div>
-        <div><b>categories</b><span>Multi-label vector over C1-C6.</span></div>
-        <div><b>presentation</b><span>Explicit or implicit harmfulness for harmful samples.</span></div>
-        <div><b>review_source</b><span>Agreement or expert adjudication.</span></div>
-      </div>
-    </section>
-  </main>
-
-  <script src="assets/js/main.js"></script>
+  <p><a href="data.html">Continue to Data</a></p>
 </body>
 </html>
