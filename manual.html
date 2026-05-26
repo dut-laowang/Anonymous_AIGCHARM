@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Annotation Manual | AIGenHarm-Video</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=manual2">
 </head>
 <body>
   <header class="site-header">
@@ -26,28 +26,32 @@
       <p class="lead">This page summarizes the paper-aligned definitions for harmfulness and explicitness, followed by the appendix rules for AIGC-specific implicit harms.</p>
     </section>
 
-    <section class="section rule-list">
+    <section class="section definition-cards">
       <div class="section-head">
         <p class="eyebrow">Core Definitions</p>
         <h2>Video-level decisions</h2>
       </div>
-      <article><span>01</span><div><h3>AIGC Harmful Video</h3><p>An in-the-wild AIGC harmful video is AI-generated or strongly AI-assisted, violates platform community-safety policies through observable or contextually inferable risks, and serves as a downstream moderation object in a real platform-governance setting.</p></div></article>
-      <article><span>02</span><div><h3>Explicit AIGC Harm</h3><p>Explicit AIGC harm refers to videos containing observable or directly interpretable risk cues, such as clear violence, nudity, weapon use, illegal instructions, direct insults or threats, explicit false claims, or direct child-safety risks.</p></div></article>
-      <article><span>03</span><div><h3>Implicit AIGC Harm</h3><p>Implicit AIGC harm refers to videos whose harmfulness mainly emerges from indirect cross-frame narrative, metaphor or irony, bias induction, anthropomorphic character relations, or platform context.</p></div></article>
+      <div class="definition-grid">
+        <article><span>01</span><h3>AIGC Harmful Video</h3><p>An in-the-wild AIGC harmful video is AI-generated or strongly AI-assisted, violates platform community-safety policies through observable or contextually inferable risks, and serves as a downstream moderation object in a real platform-governance setting.</p></article>
+        <article><span>02</span><h3>Explicit AIGC Harm</h3><p>Explicit AIGC harm contains observable or directly interpretable risk cues, such as clear violence, nudity, weapon use, illegal instructions, direct insults or threats, explicit false claims, or direct child-safety risks.</p></article>
+        <article><span>03</span><h3>Implicit AIGC Harm</h3><p>Implicit AIGC harm mainly emerges from indirect cross-frame narrative, metaphor or irony, bias induction, anthropomorphic character relations, or platform context.</p></article>
+      </div>
     </section>
 
-    <section class="section rule-list">
+    <section class="section manual-rules">
       <div class="section-head">
         <p class="eyebrow">Implicit-Harm Criteria</p>
         <h2>AIGC-specific implicit judgment rules</h2>
       </div>
-      <article><span>01</span><div><h3>Stylized Characters</h3><p>For AI-generated anthropomorphic animals or meme-like characters, severe violence or direct physical harm remains explicit; harmfulness conveyed mainly through character framing, visual association, or contextual implication is implicit.</p></div></article>
-      <article><span>02</span><div><h3>Metaphorical Hate or Harassment</h3><p>For hate, harassment, or threat content, samples without direct violent imagery are implicit when the attack is conveyed through metaphor, group stereotypes, derogatory narration, or suggestive language.</p></div></article>
-      <article><span>03</span><div><h3>Contextual Violence or Dangerous Acts</h3><p>For violence or dangerous-act content, playful fighting, low-intensity simulated conflict, or war scenes with anti-war, peace-oriented, or news-like semantics are treated as implicit.</p></div></article>
-      <article><span>04</span><div><h3>Suggestive Sexual Risk</h3><p>For sexual or nudity-related content, samples without explicit exposure or direct sexual acts are implicit when the risk is conveyed through language, posture, objects, or suggestive composition.</p></div></article>
-      <article><span>05</span><div><h3>Softened Child-Safety Risk</h3><p>For child-safety content, tutorials inducing children to participate in illegal activities, or samples concealing child abuse, exploitation, or forced labor under jokes, parody, or softened framing, are implicit.</p></div></article>
-      <article><span>06</span><div><h3>Indirect Illegal-Activity Cues</h3><p>For illegal activity or regulated goods, samples are implicit when they do not provide a complete illegal tutorial but still convey actionable risk through stepwise hints, inducive procedures, or evasive wording.</p></div></article>
-      <article><span>07</span><div><h3>Misleading or Politically Sensitive Implication</h3><p>For misinformation or politically sensitive content, bias reinforcement, misleading inducement, pseudo-factual narration, compliance-risk implication, or metaphorical attacks are implicit unless they become explicit fabrication or overt incitement.</p></div></article>
+      <div class="rule-stack">
+        <article><span>01</span><div><h3>Stylized Characters</h3><p>For AI-generated anthropomorphic animals or meme-like characters, severe violence or direct physical harm remains explicit; harmfulness conveyed mainly through character framing, visual association, or contextual implication is implicit.</p></div></article>
+        <article><span>02</span><div><h3>Metaphorical Hate or Harassment</h3><p>For hate, harassment, or threat content, samples without direct violent imagery are implicit when the attack is conveyed through metaphor, group stereotypes, derogatory narration, or suggestive language.</p></div></article>
+        <article><span>03</span><div><h3>Contextual Violence or Dangerous Acts</h3><p>For violence or dangerous-act content, playful fighting, low-intensity simulated conflict, or war scenes with anti-war, peace-oriented, or news-like semantics are treated as implicit.</p></div></article>
+        <article><span>04</span><div><h3>Suggestive Sexual Risk</h3><p>For sexual or nudity-related content, samples without explicit exposure or direct sexual acts are implicit when the risk is conveyed through language, posture, objects, or suggestive composition.</p></div></article>
+        <article><span>05</span><div><h3>Softened Child-Safety Risk</h3><p>For child-safety content, tutorials inducing children to participate in illegal activities, or samples concealing child abuse, exploitation, or forced labor under jokes, parody, or softened framing, are implicit.</p></div></article>
+        <article><span>06</span><div><h3>Indirect Illegal-Activity Cues</h3><p>For illegal activity or regulated goods, samples are implicit when they do not provide a complete illegal tutorial but still convey actionable risk through stepwise hints, inducive procedures, or evasive wording.</p></div></article>
+        <article><span>07</span><div><h3>Misleading or Politically Sensitive Implication</h3><p>For misinformation or politically sensitive content, bias reinforcement, misleading inducement, pseudo-factual narration, compliance-risk implication, or metaphorical attacks are implicit unless they become explicit fabrication or overt incitement.</p></div></article>
+      </div>
     </section>
   </main>
 
